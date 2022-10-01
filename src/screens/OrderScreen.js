@@ -19,7 +19,6 @@ const OrderScreen = ({ match }) => {
   const dispatch = useDispatch();
 
   const orderDetails = useSelector((state) => state.orderDetails);
-  console.log(orderDetails.order);
   const { order, loading, error } = orderDetails;
 
   const orderPay = useSelector((state) => state.orderPay);
